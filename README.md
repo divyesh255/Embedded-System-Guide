@@ -14,9 +14,9 @@ This guide provides a structured learning path for embedded systems programming,
 
 ### ✅ Completed
 - **01_threads** - POSIX Threads (pthreads)
+- **02_mutex** - Mutual Exclusion
 
 ### 🚧 Coming Soon
-- 02_mutex - Mutual Exclusion
 - 03_condition_variables - Thread Synchronization
 - 04_atomic_operations - Lock-Free Programming
 - 05_semaphores - Resource Management

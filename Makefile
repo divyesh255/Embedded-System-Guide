@@ -1,25 +1,32 @@
 # Master Makefile for Embedded Systems Learning Guide
 # Builds all concept modules
 
-.PHONY: all clean help threads
+.PHONY: all clean help threads mutex
 
 # Default target - build all modules
-all: threads
+all: threads mutex
 	@echo ""
 	@echo "✓ All modules built successfully!"
 	@echo ""
 	@echo "To run examples:"
 	@echo "  cd concepts/01_threads && ./01_basic_thread"
+	@echo "  cd concepts/02_mutex && ./01_race_condition"
 
 # Build threads module
 threads:
 	@echo "Building threads module..."
 	@$(MAKE) -C concepts/01_threads
 
+# Build mutex module
+mutex:
+	@echo "Building mutex module..."
+	@$(MAKE) -C concepts/02_mutex
+
 # Clean all modules
 clean:
 	@echo "Cleaning all modules..."
 	@$(MAKE) -C concepts/01_threads clean
+	@$(MAKE) -C concepts/02_mutex clean
 	@echo "✓ All modules cleaned"
 
 # Show help
@@ -29,11 +36,13 @@ help:
 	@echo "Available targets:"
 	@echo "  make          - Build all modules"
 	@echo "  make threads  - Build only threads module"
+	@echo "  make mutex    - Build only mutex module"
 	@echo "  make clean    - Clean all build artifacts"
 	@echo "  make help     - Show this help"
 	@echo ""
 	@echo "Current modules:"
 	@echo "  ✓ 01_threads - POSIX Threads"
+	@echo "  ✓ 02_mutex - Mutual Exclusion"
 	@echo ""
 	@echo "To get started:"
 	@echo "  1. make"

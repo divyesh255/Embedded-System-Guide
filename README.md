@@ -15,9 +15,9 @@ This guide provides a structured learning path for embedded systems programming,
 ### ✅ Completed
 - **01_threads** - POSIX Threads (pthreads)
 - **02_mutex** - Mutual Exclusion
+- **03_condition_variables** - Efficient Thread Synchronization
 
 ### 🚧 Coming Soon
-- 03_condition_variables - Thread Synchronization
 - 04_atomic_operations - Lock-Free Programming
 - 05_semaphores - Resource Management
 - 06_spinlocks - Fast Locking
@@ -31,17 +31,25 @@ This guide provides a structured learning path for embedded systems programming,
 cd Embedded-System-Guide
 
 # Build all examples
-make all
+make
 
 # Or build specific module
-cd concepts/01_threads
-make all
+make threads
+make mutex
+make condvar
 
 # Run examples
+cd concepts/01_threads
 ./01_basic_thread
 ./02_thread_args
-./03_multiple_threads
-./04_thread_join
+
+cd ../02_mutex
+./01_race_condition
+./02_mutex_solution
+
+cd ../03_condition_variables
+./02_condvar_good
+./03_producer_consumer
 ```
 
 ## 📖 How to Use This Guide
@@ -93,12 +101,28 @@ Embedded-System-Guide/
 ├── README.md              # This file
 ├── Makefile               # Master build file
 └── concepts/
-    └── 01_threads/
+    ├── 01_threads/
+    │   ├── 00_README.md           # Theory
+    │   ├── 01_basic_thread.c      # Example 1
+    │   ├── 02_thread_args.c       # Example 2
+    │   ├── 03_multiple_threads.c  # Example 3
+    │   ├── 04_thread_join.c       # Example 4
+    │   ├── 05_exercises.md        # Practice
+    │   └── Makefile               # Build examples
+    ├── 02_mutex/
+    │   ├── 00_README.md           # Theory
+    │   ├── 01_race_condition.c    # Problem demo
+    │   ├── 02_mutex_solution.c    # Solution
+    │   ├── 03_deadlock.c          # Deadlock demo
+    │   ├── 04_trylock.c           # Non-blocking
+    │   ├── 05_exercises.md        # Practice
+    │   └── Makefile               # Build examples
+    └── 03_condition_variables/
         ├── 00_README.md           # Theory
-        ├── 01_basic_thread.c      # Example 1
-        ├── 02_thread_args.c       # Example 2
-        ├── 03_multiple_threads.c  # Example 3
-        ├── 04_thread_join.c       # Example 4
+        ├── 01_busy_wait_bad.c     # Problem demo
+        ├── 02_condvar_good.c      # Solution
+        ├── 03_producer_consumer.c # Classic pattern
+        ├── 04_spurious_wakeup.c   # Edge cases
         ├── 05_exercises.md        # Practice
         └── Makefile               # Build examples
 ```
@@ -120,6 +144,16 @@ By completing this guide, you will:
 3. **Practice** - Do all exercises, even if they seem easy
 4. **Review** - Revisit concepts as you progress
 5. **Build** - Create your own projects using these concepts
+
+## 📊 Module Overview
+
+| Module | Topic | Files | Study Time | Difficulty |
+|--------|-------|-------|------------|------------|
+| 01 | Threads | 7 | 2.5 hours | Beginner |
+| 02 | Mutex | 6 | 2.5 hours | Beginner-Intermediate |
+| 03 | Condition Variables | 6 | 3 hours | Intermediate |
+
+**Total:** 19 files, ~8 hours of study material
 
 ## 🤝 Contributing
 

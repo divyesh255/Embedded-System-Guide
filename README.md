@@ -16,10 +16,10 @@ This guide provides a structured learning path for embedded systems programming,
 - **01_threads** - POSIX Threads (pthreads)
 - **02_mutex** - Mutual Exclusion
 - **03_condition_variables** - Efficient Thread Synchronization
+- **04_semaphores** - Resource Management
 
 ### 🚧 Coming Soon
-- 04_atomic_operations - Lock-Free Programming
-- 05_semaphores - Resource Management
+- 05_atomic_operations - Lock-Free Programming
 - 06_spinlocks - Fast Locking
 - 07_eventfd - Event Notification
 - 08_signal_handling - Signal Management
@@ -50,6 +50,10 @@ cd ../02_mutex
 cd ../03_condition_variables
 ./02_condvar_good
 ./03_producer_consumer
+
+cd ../04_semaphores
+./01_binary_semaphore
+./02_counting_semaphore
 ```
 
 ## 📖 How to Use This Guide
@@ -117,12 +121,20 @@ Embedded-System-Guide/
     │   ├── 04_trylock.c           # Non-blocking
     │   ├── 05_exercises.md        # Practice
     │   └── Makefile               # Build examples
-    └── 03_condition_variables/
+    ├── 03_condition_variables/
+    │   ├── 00_README.md           # Theory
+    │   ├── 01_busy_wait_bad.c     # Problem demo
+    │   ├── 02_condvar_good.c      # Solution
+    │   ├── 03_producer_consumer.c # Classic pattern
+    │   ├── 04_spurious_wakeup.c   # Edge cases
+    │   ├── 05_exercises.md        # Practice
+    │   └── Makefile               # Build examples
+    └── 04_semaphores/
         ├── 00_README.md           # Theory
-        ├── 01_busy_wait_bad.c     # Problem demo
-        ├── 02_condvar_good.c      # Solution
+        ├── 01_binary_semaphore.c  # Binary semaphore
+        ├── 02_counting_semaphore.c # Resource pool
         ├── 03_producer_consumer.c # Classic pattern
-        ├── 04_spurious_wakeup.c   # Edge cases
+        ├── 04_rate_limiter.c      # Rate limiting
         ├── 05_exercises.md        # Practice
         └── Makefile               # Build examples
 ```
@@ -152,8 +164,9 @@ By completing this guide, you will:
 | 01 | Threads | 7 | 2.5 hours | Beginner |
 | 02 | Mutex | 6 | 2.5 hours | Beginner-Intermediate |
 | 03 | Condition Variables | 6 | 3 hours | Intermediate |
+| 04 | Semaphores | 6 | 2.5 hours | Intermediate |
 
-**Total:** 19 files, ~8 hours of study material
+**Total:** 25 files, ~10.5 hours of study material
 
 ## 🤝 Contributing
 

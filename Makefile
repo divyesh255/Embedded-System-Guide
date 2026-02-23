@@ -1,10 +1,10 @@
 # Master Makefile for Embedded Systems Learning Guide
 # Builds all concept modules
 
-.PHONY: all clean help threads mutex condvar
+.PHONY: all clean help threads mutex condvar semaphores
 
 # Default target - build all modules
-all: threads mutex condvar
+all: threads mutex condvar semaphores
 	@echo ""
 	@echo "✓ All modules built successfully!"
 	@echo ""
@@ -12,6 +12,7 @@ all: threads mutex condvar
 	@echo "  cd concepts/01_threads && ./01_basic_thread"
 	@echo "  cd concepts/02_mutex && ./01_race_condition"
 	@echo "  cd concepts/03_condition_variables && ./02_condvar_good"
+	@echo "  cd concepts/04_semaphores && ./01_binary_semaphore"
 
 # Build threads module
 threads:
@@ -28,12 +29,18 @@ condvar:
 	@echo "Building condition variables module..."
 	@$(MAKE) -C concepts/03_condition_variables
 
+# Build semaphores module
+semaphores:
+	@echo "Building semaphores module..."
+	@$(MAKE) -C concepts/04_semaphores
+
 # Clean all modules
 clean:
 	@echo "Cleaning all modules..."
 	@$(MAKE) -C concepts/01_threads clean
 	@$(MAKE) -C concepts/02_mutex clean
 	@$(MAKE) -C concepts/03_condition_variables clean
+	@$(MAKE) -C concepts/04_semaphores clean
 	@echo "✓ All modules cleaned"
 
 # Show help
@@ -41,17 +48,19 @@ help:
 	@echo "Embedded Systems Learning Guide - Master Makefile"
 	@echo ""
 	@echo "Available targets:"
-	@echo "  make          - Build all modules"
-	@echo "  make threads  - Build only threads module"
-	@echo "  make mutex    - Build only mutex module"
-	@echo "  make condvar  - Build only condition variables module"
-	@echo "  make clean    - Clean all build artifacts"
-	@echo "  make help     - Show this help"
+	@echo "  make            - Build all modules"
+	@echo "  make threads    - Build only threads module"
+	@echo "  make mutex      - Build only mutex module"
+	@echo "  make condvar    - Build only condition variables module"
+	@echo "  make semaphores - Build only semaphores module"
+	@echo "  make clean      - Clean all build artifacts"
+	@echo "  make help       - Show this help"
 	@echo ""
 	@echo "Current modules:"
 	@echo "  ✓ 01_threads - POSIX Threads"
 	@echo "  ✓ 02_mutex - Mutual Exclusion"
 	@echo "  ✓ 03_condition_variables - Efficient Synchronization"
+	@echo "  ✓ 04_semaphores - Resource Management"
 	@echo ""
 	@echo "To get started:"
 	@echo "  1. make"

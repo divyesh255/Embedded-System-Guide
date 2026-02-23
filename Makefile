@@ -1,10 +1,10 @@
 # Master Makefile for Embedded Systems Learning Guide
 # Builds all concept modules
 
-.PHONY: all clean help threads mutex condvar semaphores
+.PHONY: all clean help threads mutex condvar semaphores atomic
 
 # Default target - build all modules
-all: threads mutex condvar semaphores
+all: threads mutex condvar semaphores atomic
 	@echo ""
 	@echo "✓ All modules built successfully!"
 	@echo ""
@@ -13,6 +13,7 @@ all: threads mutex condvar semaphores
 	@echo "  cd concepts/02_mutex && ./01_race_condition"
 	@echo "  cd concepts/03_condition_variables && ./02_condvar_good"
 	@echo "  cd concepts/04_semaphores && ./01_binary_semaphore"
+	@echo "  cd concepts/05_atomic_operations && ./01_atomic_counter"
 
 # Build threads module
 threads:
@@ -34,6 +35,11 @@ semaphores:
 	@echo "Building semaphores module..."
 	@$(MAKE) -C concepts/04_semaphores
 
+# Build atomic operations module
+atomic:
+	@echo "Building atomic operations module..."
+	@$(MAKE) -C concepts/05_atomic_operations
+
 # Clean all modules
 clean:
 	@echo "Cleaning all modules..."
@@ -41,6 +47,7 @@ clean:
 	@$(MAKE) -C concepts/02_mutex clean
 	@$(MAKE) -C concepts/03_condition_variables clean
 	@$(MAKE) -C concepts/04_semaphores clean
+	@$(MAKE) -C concepts/05_atomic_operations clean
 	@echo "✓ All modules cleaned"
 
 # Show help
@@ -53,6 +60,7 @@ help:
 	@echo "  make mutex      - Build only mutex module"
 	@echo "  make condvar    - Build only condition variables module"
 	@echo "  make semaphores - Build only semaphores module"
+	@echo "  make atomic     - Build only atomic operations module"
 	@echo "  make clean      - Clean all build artifacts"
 	@echo "  make help       - Show this help"
 	@echo ""
@@ -61,6 +69,7 @@ help:
 	@echo "  ✓ 02_mutex - Mutual Exclusion"
 	@echo "  ✓ 03_condition_variables - Efficient Synchronization"
 	@echo "  ✓ 04_semaphores - Resource Management"
+	@echo "  ✓ 05_atomic_operations - Lock-Free Programming"
 	@echo ""
 	@echo "To get started:"
 	@echo "  1. make"

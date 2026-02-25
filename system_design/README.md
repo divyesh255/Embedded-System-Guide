@@ -21,51 +21,24 @@ These patterns are used in:
 - **Aerospace** - Avionics, DO-178C
 - **IoT** - Smart devices, battery-powered systems
 
-## 📚 Curriculum Structure
+## 📚 Essential Embedded Design Patterns
 
-### **Section 1: Foundational Patterns** (10 modules)
+**Focus:** 10 battle-tested patterns you'll actually use in real embedded systems
 
-| # | Pattern | Status | Study Time | Difficulty |
-|---|---------|--------|------------|------------|
-| 01 | **Layered Architecture** | ✅ Complete | 45 min | Beginner |
-| 02 | State Machine | 🚧 Planned | 40 min | Beginner |
-| 03 | Hierarchical State Machine | 🚧 Planned | 45 min | Intermediate |
-| 04 | Event-Driven Architecture | 🚧 Planned | 40 min | Intermediate |
-| 05 | Command Pattern | 🚧 Planned | 35 min | Intermediate |
-| 06 | Observer Pattern | 🚧 Planned | 35 min | Intermediate |
-| 07 | Strategy Pattern | 🚧 Planned | 30 min | Intermediate |
-| 08 | Factory Pattern | 🚧 Planned | 30 min | Intermediate |
-| 09 | Singleton Pattern | 🚧 Planned | 25 min | Beginner |
-| 10 | Registry Pattern | 🚧 Planned | 30 min | Intermediate |
+| # | Pattern | Status | Study Time | Difficulty | Use Case |
+|---|---------|--------|------------|------------|----------|
+| 01 | **Layered Architecture** | ✅ Complete | 45 min | Beginner | Code organization |
+| 02 | **State Machine** | ✅ Complete | 40 min | Beginner | Control logic |
+| 03 | **Circular Buffer** | 🚧 Next | 35 min | Beginner | UART, sensors |
+| 04 | **Interrupt Handler** | 📋 Planned | 40 min | Intermediate | Real-time events |
+| 05 | **Timer Manager** | 📋 Planned | 35 min | Intermediate | Software timers |
+| 06 | **Event Queue** | 📋 Planned | 40 min | Intermediate | Event-driven |
+| 07 | **Memory Pool** | 📋 Planned | 35 min | Intermediate | Safe allocation |
+| 08 | **Watchdog Manager** | 📋 Planned | 30 min | Intermediate | Reliability |
+| 09 | **Error Handler** | 📋 Planned | 35 min | Intermediate | Error management |
+| 10 | **Power Manager** | 📋 Planned | 40 min | Advanced | Battery optimization |
 
-### **Section 2: Data Management** (10 modules)
-- Circular Buffer, Double Buffer, Memory Pool, Object Pool, Queue, Priority Queue, Stack, Linked List, Hash Table, Bit Array
-
-### **Section 3: Communication** (10 modules)
-- Producer-Consumer, Publish-Subscribe, Message Queue, Mailbox, Pipe, Shared Memory, RPC, Protocol Stack, Packet Handler, DMA Controller
-
-### **Section 4: Concurrency** (10 modules)
-- Task Scheduler, Preemptive Scheduler, Rate Monotonic, Deadline Scheduler, Work Queue, Thread Pool, Pipeline, Fork-Join, Barrier, Semaphore Manager
-
-### **Section 5: Error Handling** (10 modules)
-- Error Code System, Exception Handler, Watchdog Manager, Retry Pattern, Circuit Breaker, Fallback, Health Monitor, Logging, Assert Framework, Safe State
-
-### **Section 6: Timing** (10 modules)
-- Software Timer, Timeout Manager, Debounce, Rate Limiter, Periodic Task, One-Shot Timer, Delay Queue, Time Wheel, Timestamp Manager, Clock Sync
-
-### **Section 7: Power Management** (8 modules)
-- Sleep Manager, Wake-up Handler, Clock Gating, Voltage Scaling, Idle Task, Power Budget, Battery Monitor, Thermal Manager
-
-### **Section 8: Safety-Critical** (10 modules)
-- Redundancy Manager, Voting System, Sanity Check, Range Check, CRC Validator, Sequence Number, Heartbeat, Safe Boot, Rollback Manager, Black Box
-
-### **Section 9: Optimization** (10 modules)
-- Lazy Init, Cache Manager, Prefetch, Batch Processing, Zero-Copy, Inline Assembly, Lookup Table, Bit Manipulation, DMA Chain, Interrupt Coalescing
-
-### **Section 10: System Integration** (12 modules)
-- Boot Loader, Firmware Update, Config Manager, Calibration, Test Framework, Mock Objects, Simulator, Profiler, Memory Debugger, Protocol Analyzer, State Dumper, Remote Debug
-
-**Total: 100 Design Patterns**
+**Total: 10 Essential Patterns (~6.5 hours of focused learning)**
 
 ## 🚀 Getting Started
 
@@ -164,9 +137,9 @@ After completing this curriculum, you will:
 
 ## 📊 Progress Tracking
 
-- **Completed:** 1/100 patterns (1%)
-- **Study Time:** ~45 minutes invested
-- **Next:** State Machine pattern
+- **Completed:** 2/10 patterns (20%)
+- **Study Time:** ~1.5 hours invested
+- **Next:** Circular Buffer pattern
 
 ## 🤝 Contributing
 

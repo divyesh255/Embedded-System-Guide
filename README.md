@@ -45,46 +45,28 @@ Both tracks use a **problem-driven, hands-on approach** with runnable code examp
 
 ### 🏭 Track 2: Industrial System Design
 **Location:** `system_design/`  
-**Focus:** Production-ready architecture patterns used in real embedded products  
-**Study Time:** ~100 hours (100 patterns × ~1 hour each)  
-**Difficulty:** Beginner to Expert
+**Focus:** 10 essential patterns you'll actually use in real embedded products  
+**Study Time:** ~6.5 hours (10 patterns × ~40 min each)  
+**Difficulty:** Beginner to Advanced
 
-#### ✅ Completed Modules (1/100)
-| Section | Pattern | Files | Study Time | Status |
-|---------|---------|-------|------------|--------|
-| 1.01 | **Layered Architecture** | 6 | 45 min | ✅ Complete |
+#### ✅ Completed Modules (2/10)
+| # | Pattern | Files | Study Time | Status |
+|---|---------|-------|------------|--------|
+| 01 | **Layered Architecture** | 6 | 45 min | ✅ Complete |
+| 02 | **State Machine** | 6 | 40 min | ✅ Complete |
 
-#### 🚧 Planned Sections (99 patterns remaining)
+#### 🚧 Essential Patterns (8 remaining)
 
-**Section 1: Foundational Patterns** (10 patterns)
-- State Machine, Hierarchical State Machine, Event-Driven, Command, Observer, Strategy, Factory, Singleton, Registry
-
-**Section 2: Data Management** (10 patterns)
-- Circular Buffer, Double Buffer, Memory Pool, Object Pool, Queue, Priority Queue, Stack, Linked List, Hash Table, Bit Array
-
-**Section 3: Communication** (10 patterns)
-- Producer-Consumer, Publish-Subscribe, Message Queue, Mailbox, Pipe, Shared Memory, RPC, Protocol Stack, Packet Handler, DMA
-
-**Section 4: Concurrency** (10 patterns)
-- Task Scheduler, Preemptive Scheduler, Rate Monotonic, Deadline Scheduler, Work Queue, Thread Pool, Pipeline, Fork-Join, Barrier
-
-**Section 5: Error Handling** (10 patterns)
-- Error Codes, Exception Handler, Watchdog, Retry, Circuit Breaker, Fallback, Health Monitor, Logging, Assert, Safe State
-
-**Section 6: Timing** (10 patterns)
-- Software Timer, Timeout Manager, Debounce, Rate Limiter, Periodic Task, One-Shot Timer, Delay Queue, Time Wheel, Timestamp, Clock Sync
-
-**Section 7: Power Management** (8 patterns)
-- Sleep Manager, Wake-up Handler, Clock Gating, Voltage Scaling, Idle Task, Power Budget, Battery Monitor, Thermal Manager
-
-**Section 8: Safety-Critical** (10 patterns)
-- Redundancy, Voting System, Sanity Check, Range Check, CRC Validator, Sequence Number, Heartbeat, Safe Boot, Rollback, Black Box
-
-**Section 9: Optimization** (10 patterns)
-- Lazy Init, Cache Manager, Prefetch, Batch Processing, Zero-Copy, Inline Assembly, Lookup Table, Bit Manipulation, DMA Chain
-
-**Section 10: System Integration** (12 patterns)
-- Bootloader, Firmware Update, Config Manager, Calibration, Test Framework, Mock Objects, Simulator, Profiler, Memory Debugger, Protocol Analyzer, State Dumper, Remote Debug
+| # | Pattern | Use Case | Difficulty |
+|---|---------|----------|------------|
+| 03 | **Circular Buffer** | UART, sensors | Beginner |
+| 04 | **Interrupt Handler** | Real-time events | Intermediate |
+| 05 | **Timer Manager** | Software timers | Intermediate |
+| 06 | **Event Queue** | Event-driven systems | Intermediate |
+| 07 | **Memory Pool** | Safe allocation | Intermediate |
+| 08 | **Watchdog Manager** | System reliability | Intermediate |
+| 09 | **Error Handler** | Error management | Intermediate |
+| 10 | **Power Manager** | Battery optimization | Advanced |
 
 **[→ Start System Design Track](system_design/README.md)**
 
@@ -228,11 +210,11 @@ cat 00_README.md
 ## 📊 Repository Statistics
 
 ### Overall Progress
-- **Total Modules:** 108 (6 complete, 102 planned)
-- **Completed:** 6 modules (5.5%)
-- **Files Created:** 37
-- **Lines of Code:** ~10,000+
-- **Study Material:** ~16 hours available
+- **Total Modules:** 18 (7 complete, 11 planned)
+- **Completed:** 7 modules (39%)
+- **Files Created:** 43
+- **Lines of Code:** ~16,000+
+- **Study Material:** ~20 hours available
 
 ### Concurrent Programming
 - **Modules:** 5/8 complete (62.5%)
@@ -240,9 +222,9 @@ cat 00_README.md
 - **Study Time:** 13 hours
 
 ### System Design
-- **Patterns:** 1/100 complete (1%)
-- **Files:** 6
-- **Study Time:** 45 minutes
+- **Patterns:** 2/10 complete (20%)
+- **Files:** 12
+- **Study Time:** ~1.5 hours
 
 ## 📂 Repository Structure
 

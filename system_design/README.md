@@ -29,8 +29,8 @@ These patterns are used in:
 |---|---------|--------|------------|------------|----------|
 | 01 | **Layered Architecture** | ✅ Complete | 45 min | Beginner | Code organization |
 | 02 | **State Machine** | ✅ Complete | 40 min | Beginner | Control logic |
-| 03 | **Circular Buffer** | 🚧 Next | 35 min | Beginner | UART, sensors |
-| 04 | **Interrupt Handler** | 📋 Planned | 40 min | Intermediate | Real-time events |
+| 03 | **Circular Buffer** | ✅ Complete | 35 min | Beginner | UART, sensors |
+| 04 | **Interrupt Handler** | 🚧 Next | 40 min | Intermediate | Real-time events |
 | 05 | **Timer Manager** | 📋 Planned | 35 min | Intermediate | Software timers |
 | 06 | **Event Queue** | 📋 Planned | 40 min | Intermediate | Event-driven |
 | 07 | **Memory Pool** | 📋 Planned | 35 min | Intermediate | Safe allocation |
@@ -137,9 +137,9 @@ After completing this curriculum, you will:
 
 ## 📊 Progress Tracking
 
-- **Completed:** 2/10 patterns (20%)
-- **Study Time:** ~1.5 hours invested
-- **Next:** Circular Buffer pattern
+- **Completed:** 3/10 patterns (30%)
+- **Study Time:** ~2 hours invested
+- **Next:** Interrupt Handler pattern
 
 ## 🤝 Contributing
 

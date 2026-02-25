@@ -49,17 +49,17 @@ Both tracks use a **problem-driven, hands-on approach** with runnable code examp
 **Study Time:** ~6.5 hours (10 patterns × ~40 min each)  
 **Difficulty:** Beginner to Advanced
 
-#### ✅ Completed Modules (2/10)
+#### ✅ Completed Modules (3/10)
 | # | Pattern | Files | Study Time | Status |
 |---|---------|-------|------------|--------|
 | 01 | **Layered Architecture** | 6 | 45 min | ✅ Complete |
 | 02 | **State Machine** | 6 | 40 min | ✅ Complete |
+| 03 | **Circular Buffer** | 6 | 35 min | ✅ Complete |
 
-#### 🚧 Essential Patterns (8 remaining)
+#### 🚧 Essential Patterns (7 remaining)
 
 | # | Pattern | Use Case | Difficulty |
 |---|---------|----------|------------|
-| 03 | **Circular Buffer** | UART, sensors | Beginner |
 | 04 | **Interrupt Handler** | Real-time events | Intermediate |
 | 05 | **Timer Manager** | Software timers | Intermediate |
 | 06 | **Event Queue** | Event-driven systems | Intermediate |
@@ -222,9 +222,9 @@ cat 00_README.md
 - **Study Time:** 13 hours
 
 ### System Design
-- **Patterns:** 2/10 complete (20%)
-- **Files:** 12
-- **Study Time:** ~1.5 hours
+- **Patterns:** 3/10 complete (30%)
+- **Files:** 18
+- **Study Time:** ~2 hours
 
 ## 📂 Repository Structure
 

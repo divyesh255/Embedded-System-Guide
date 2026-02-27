@@ -107,7 +107,9 @@ Time 150ms: Processing corrupted data
 ### Week 2: The Math Doesn't Work
 
 **UART Data Rate:**
-- 9600 baud = 960 bytes/second
+- 9600 baud ÷ 10 bits/byte = 960 bytes/second
+  - UART 8N1 framing: 1 start bit + 8 data bits + 1 stop bit = **10 bits per byte**
+  - NOT 9600 ÷ 8 — the start/stop bits are real overhead!
 - NMEA sentence = ~70 bytes
 - Arrives in ~73ms
 
@@ -119,7 +121,8 @@ Time 150ms: Processing corrupted data
 - **Total: 850ms**
 
 **Problem:** Processing (850ms) > Receive time (73ms)
-- While processing one sentence, **11 more bytes arrive!**
+- While processing one sentence, **11 more sentences arrive!**
+  - 850ms ÷ 73ms/sentence ≈ 11.6 sentences
 - No place to store them = **DATA LOSS**
 
 ### Week 3: Attempted Fixes (All Failed)

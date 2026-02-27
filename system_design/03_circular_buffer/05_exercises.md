@@ -18,10 +18,13 @@ You're designing a UART receive buffer for a sensor that sends data at 115200 ba
 
 **Calculation:**
 ```
-Bytes per second = 115200 / 10 = 11520 bytes/sec
-Bytes per 100ms = 11520 * 0.1 = 1152 bytes
-With 2x safety = 1152 * 2 = 2304 bytes
-Next power of 2 = 4096 bytes
+UART 8N1 framing: 1 start + 8 data + 1 stop = 10 bits per byte
+Bytes per second = 115200 baud ÷ 10 bits/byte = 11520 bytes/sec
+  (NOT 115200 ÷ 8 — start/stop bits are real overhead!)
+
+Bytes per 100ms  = 11520 × 0.1 = 1152 bytes
+With 2× safety   = 1152 × 2    = 2304 bytes
+Next power of 2  = 4096 bytes
 ```
 
 **Answer:** Use 4096-byte buffer (4KB)

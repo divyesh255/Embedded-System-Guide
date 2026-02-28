@@ -31,7 +31,7 @@ These patterns are used in:
 | 02 | **State Machine** | ✅ Complete | 40 min | Beginner | Control logic |
 | 03 | **Circular Buffer** | ✅ Complete | 35 min | Beginner | UART, sensors |
 | 04 | **Interrupt Handler** | ✅ Complete | 40 min | Intermediate | Real-time events |
-| 05 | **Timer Manager** | 📋 Planned | 35 min | Intermediate | Software timers |
+| 05 | **Timer Manager** | ✅ Complete | 35 min | Intermediate | Software timers |
 | 06 | **Event Queue** | 📋 Planned | 40 min | Intermediate | Event-driven |
 | 07 | **Memory Pool** | 📋 Planned | 35 min | Intermediate | Safe allocation |
 | 08 | **Watchdog Manager** | 📋 Planned | 30 min | Intermediate | Reliability |
@@ -137,9 +137,9 @@ After completing this curriculum, you will:
 
 ## 📊 Progress Tracking
 
-- **Completed:** 4/10 patterns (40%)
-- **Study Time:** ~2.7 hours invested
-- **Next:** Timer Manager pattern
+- **Completed:** 5/10 patterns (50%)
+- **Study Time:** ~3.3 hours invested
+- **Next:** Event Queue pattern
 
 ## 🤝 Contributing
 

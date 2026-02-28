@@ -49,19 +49,19 @@ Both tracks use a **problem-driven, hands-on approach** with runnable code examp
 **Study Time:** ~6.5 hours (10 patterns × ~40 min each)  
 **Difficulty:** Beginner to Advanced
 
-#### ✅ Completed Modules (4/10)
+#### ✅ Completed Modules (5/10)
 | # | Pattern | Files | Study Time | Status |
 |---|---------|-------|------------|--------|
 | 01 | **Layered Architecture** | 6 | 45 min | ✅ Complete |
 | 02 | **State Machine** | 6 | 40 min | ✅ Complete |
 | 03 | **Circular Buffer** | 6 | 35 min | ✅ Complete |
 | 04 | **Interrupt Handler** | 6 | 40 min | ✅ Complete |
+| 05 | **Timer Manager** | 6 | 35 min | ✅ Complete |
 
-#### 🚧 Essential Patterns (6 remaining)
+#### 🚧 Essential Patterns (5 remaining)
 
 | # | Pattern | Use Case | Difficulty |
 |---|---------|----------|------------|
-| 05 | **Timer Manager** | Software timers | Intermediate |
 | 06 | **Event Queue** | Event-driven systems | Intermediate |
 | 07 | **Memory Pool** | Safe allocation | Intermediate |
 | 08 | **Watchdog Manager** | System reliability | Intermediate |
@@ -210,10 +210,10 @@ cat 00_README.md
 ## 📊 Repository Statistics
 
 ### Overall Progress
-- **Total Modules:** 18 (8 complete, 10 planned)
-- **Completed:** 8 modules (44%)
-- **Files Created:** 49
-- **Lines of Code:** ~18,000+
+- **Total Modules:** 18 (9 complete, 9 planned)
+- **Completed:** 9 modules (50%)
+- **Files Created:** 55
+- **Lines of Code:** ~20,000+
 - **Study Material:** ~20 hours available
 
 ### Concurrent Programming
@@ -222,9 +222,9 @@ cat 00_README.md
 - **Study Time:** 13 hours
 
 ### System Design
-- **Patterns:** 4/10 complete (40%)
-- **Files:** 24
-- **Study Time:** ~2.7 hours
+- **Patterns:** 5/10 complete (50%)
+- **Files:** 30
+- **Study Time:** ~3.3 hours
 
 ## 📂 Repository Structure
 

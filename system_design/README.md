@@ -32,7 +32,7 @@ These patterns are used in:
 | 03 | **Circular Buffer** | ✅ Complete | 35 min | Beginner | UART, sensors |
 | 04 | **Interrupt Handler** | ✅ Complete | 40 min | Intermediate | Real-time events |
 | 05 | **Timer Manager** | ✅ Complete | 35 min | Intermediate | Software timers |
-| 06 | **Event Queue** | 📋 Planned | 40 min | Intermediate | Event-driven |
+| 06 | **Event Queue** | ✅ Complete | 40 min | Intermediate | Event-driven |
 | 07 | **Memory Pool** | 📋 Planned | 35 min | Intermediate | Safe allocation |
 | 08 | **Watchdog Manager** | 📋 Planned | 30 min | Intermediate | Reliability |
 | 09 | **Error Handler** | 📋 Planned | 35 min | Intermediate | Error management |
@@ -137,9 +137,9 @@ After completing this curriculum, you will:
 
 ## 📊 Progress Tracking
 
-- **Completed:** 5/10 patterns (50%)
-- **Study Time:** ~3.3 hours invested
-- **Next:** Event Queue pattern
+- **Completed:** 6/10 patterns (60%)
+- **Study Time:** ~4.0 hours invested
+- **Next:** Memory Pool pattern
 
 ## 🤝 Contributing
 

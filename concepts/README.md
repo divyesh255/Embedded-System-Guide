@@ -18,9 +18,9 @@ This guide provides a structured learning path for embedded systems programming,
 - **03_condition_variables** - Efficient Thread Synchronization
 - **04_semaphores** - Resource Management
 - **05_atomic_operations** - Lock-Free Programming
+- **06_spinlocks** - Busy-Wait Synchronization
 
 ### 🚧 Coming Soon
-- 06_spinlocks - Fast Locking
 - 07_eventfd - Event Notification
 - 08_signal_handling - Signal Management
 
@@ -58,6 +58,10 @@ cd ../04_semaphores
 cd ../05_atomic_operations
 ./01_atomic_counter
 ./02_compare_and_swap
+
+cd ../06_spinlocks
+./01_naive_spinlock
+./02_atomic_spinlock
 ```
 
 ## 📖 How to Use This Guide
@@ -141,12 +145,20 @@ Embedded-System-Guide/
     │   ├── 04_rate_limiter.c      # Rate limiting
     │   ├── 05_exercises.md        # Practice
     │   └── Makefile               # Build examples
-    └── 05_atomic_operations/
+    ├── 05_atomic_operations/
+    │   ├── 00_README.md           # Theory
+    │   ├── 01_atomic_counter.c    # Lock-free counter
+    │   ├── 02_compare_and_swap.c  # CAS operation
+    │   ├── 03_spinlock.c          # Spinlock
+    │   ├── 04_reference_counting.c # Refcounting
+    │   ├── 05_exercises.md        # Practice
+    │   └── Makefile               # Build examples
+    └── 06_spinlocks/
         ├── 00_README.md           # Theory
-        ├── 01_atomic_counter.c    # Lock-free counter
-        ├── 02_compare_and_swap.c  # CAS operation
-        ├── 03_spinlock.c          # Spinlock
-        ├── 04_reference_counting.c # Refcounting
+        ├── 01_naive_spinlock.c    # Race condition demo
+        ├── 02_atomic_spinlock.c   # Correct implementation
+        ├── 03_test_and_test_and_set.c # Optimized version
+        ├── 04_ticket_spinlock.c   # Fair spinlock
         ├── 05_exercises.md        # Practice
         └── Makefile               # Build examples
 ```
@@ -178,8 +190,9 @@ By completing this guide, you will:
 | 03 | Condition Variables | 6 | 3 hours | Intermediate |
 | 04 | Semaphores | 6 | 2.5 hours | Intermediate |
 | 05 | Atomic Operations | 6 | 2.5 hours | Intermediate-Advanced |
+| 06 | Spinlocks | 6 | 2 hours | Intermediate-Advanced |
 
-**Total:** 31 files, ~13 hours of study material
+**Total:** 37 files, ~15 hours of study material
 
 ## 🤝 Contributing
 

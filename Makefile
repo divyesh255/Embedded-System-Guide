@@ -1,10 +1,10 @@
 # Master Makefile for Embedded Systems Learning Guide
 # Builds all concept modules
 
-.PHONY: all clean help threads mutex condvar semaphores atomic
+.PHONY: all clean help threads mutex condvar semaphores atomic spinlocks
 
 # Default target - build all modules
-all: threads mutex condvar semaphores atomic
+all: threads mutex condvar semaphores atomic spinlocks
 	@echo ""
 	@echo "✓ All modules built successfully!"
 	@echo ""
@@ -14,6 +14,7 @@ all: threads mutex condvar semaphores atomic
 	@echo "  cd concepts/03_condition_variables && ./02_condvar_good"
 	@echo "  cd concepts/04_semaphores && ./01_binary_semaphore"
 	@echo "  cd concepts/05_atomic_operations && ./01_atomic_counter"
+	@echo "  cd concepts/06_spinlocks && ./02_atomic_spinlock"
 
 # Build threads module
 threads:
@@ -40,6 +41,11 @@ atomic:
 	@echo "Building atomic operations module..."
 	@$(MAKE) -C concepts/05_atomic_operations
 
+# Build spinlocks module
+spinlocks:
+	@echo "Building spinlocks module..."
+	@$(MAKE) -C concepts/06_spinlocks
+
 # Clean all modules
 clean:
 	@echo "Cleaning all modules..."
@@ -48,6 +54,7 @@ clean:
 	@$(MAKE) -C concepts/03_condition_variables clean
 	@$(MAKE) -C concepts/04_semaphores clean
 	@$(MAKE) -C concepts/05_atomic_operations clean
+	@$(MAKE) -C concepts/06_spinlocks clean
 	@echo "✓ All modules cleaned"
 
 # Show help
@@ -61,6 +68,7 @@ help:
 	@echo "  make condvar    - Build only condition variables module"
 	@echo "  make semaphores - Build only semaphores module"
 	@echo "  make atomic     - Build only atomic operations module"
+	@echo "  make spinlocks  - Build only spinlocks module"
 	@echo "  make clean      - Clean all build artifacts"
 	@echo "  make help       - Show this help"
 	@echo ""
@@ -70,6 +78,7 @@ help:
 	@echo "  ✓ 03_condition_variables - Efficient Synchronization"
 	@echo "  ✓ 04_semaphores - Resource Management"
 	@echo "  ✓ 05_atomic_operations - Lock-Free Programming"
+	@echo "  ✓ 06_spinlocks - Busy-Wait Synchronization"
 	@echo ""
 	@echo "To get started:"
 	@echo "  1. make"

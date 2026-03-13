@@ -34,7 +34,7 @@ These patterns are used in:
 | 05 | **Timer Manager** | ✅ Complete | 35 min | Intermediate | Software timers |
 | 06 | **Event Queue** | ✅ Complete | 40 min | Intermediate | Event-driven |
 | 07 | **Memory Pool** | ✅ Complete | 35 min | Intermediate | Safe allocation |
-| 08 | **Watchdog Manager** | 📋 Planned | 30 min | Intermediate | Reliability |
+| 08 | **Watchdog Manager** | ✅ Complete | 30 min | Intermediate | Reliability |
 | 09 | **Error Handler** | 📋 Planned | 35 min | Intermediate | Error management |
 | 10 | **Power Manager** | 📋 Planned | 40 min | Advanced | Battery optimization |
 
@@ -137,9 +137,9 @@ After completing this curriculum, you will:
 
 ## 📊 Progress Tracking
 
-- **Completed:** 7/10 patterns (70%)
-- **Study Time:** ~4.6 hours invested
-- **Next:** Watchdog Manager pattern
+- **Completed:** 8/10 patterns (80%)
+- **Study Time:** ~5.1 hours invested
+- **Next:** Error Handler pattern
 
 ## 🤝 Contributing
 

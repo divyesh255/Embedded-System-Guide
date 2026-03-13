@@ -49,7 +49,7 @@ Both tracks use a **problem-driven, hands-on approach** with runnable code examp
 **Study Time:** ~6.5 hours (10 patterns × ~40 min each)  
 **Difficulty:** Beginner to Advanced
 
-#### ✅ Completed Modules (8/10)
+#### ✅ Completed Modules (9/10)
 | # | Pattern | Files | Study Time | Status |
 |---|---------|-------|------------|--------|
 | 01 | **Layered Architecture** | 6 | 45 min | ✅ Complete |
@@ -60,12 +60,12 @@ Both tracks use a **problem-driven, hands-on approach** with runnable code examp
 | 06 | **Event Queue** | 6 | 40 min | ✅ Complete |
 | 07 | **Memory Pool** | 6 | 35 min | ✅ Complete |
 | 08 | **Watchdog Manager** | 6 | 30 min | ✅ Complete |
+| 09 | **Error Handler** | 6 | 35 min | ✅ Complete |
 
-#### 🚧 Essential Patterns (2 remaining)
+#### 🚧 Essential Patterns (1 remaining)
 
 | # | Pattern | Use Case | Difficulty |
 |---|---------|----------|------------|
-| 09 | **Error Handler** | Error management | Intermediate |
 | 10 | **Power Manager** | Battery optimization | Advanced |
 
 **[→ Start System Design Track](system_design/README.md)**
@@ -210,11 +210,11 @@ cat 00_README.md
 ## 📊 Repository Statistics
 
 ### Overall Progress
-- **Total Modules:** 18 (12 complete, 6 planned)
-- **Completed:** 12 modules (67%)
-- **Files Created:** 73
-- **Lines of Code:** ~26,000+
-- **Study Material:** ~23 hours available
+- **Total Modules:** 18 (13 complete, 5 planned)
+- **Completed:** 13 modules (72%)
+- **Files Created:** 79
+- **Lines of Code:** ~28,000+
+- **Study Material:** ~24 hours available
 
 ### Concurrent Programming
 - **Modules:** 5/8 complete (62.5%)
@@ -222,9 +222,9 @@ cat 00_README.md
 - **Study Time:** 13 hours
 
 ### System Design
-- **Patterns:** 8/10 complete (80%)
-- **Files:** 48
-- **Study Time:** ~5.1 hours
+- **Patterns:** 9/10 complete (90%)
+- **Files:** 54
+- **Study Time:** ~5.7 hours
 
 ## 📂 Repository Structure
 

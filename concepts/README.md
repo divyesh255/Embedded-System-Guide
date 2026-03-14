@@ -19,10 +19,11 @@ This guide provides a structured learning path for embedded systems programming,
 - **04_semaphores** - Resource Management
 - **05_atomic_operations** - Lock-Free Programming
 - **06_spinlocks** - Busy-Wait Synchronization
+- **07_rwlock** - Read-Write Locks
 
 ### 🚧 Coming Soon
-- 07_eventfd - Event Notification
-- 08_signal_handling - Signal Management
+- 08_eventfd - Event Notification
+- 09_signal_handling - Signal Management
 
 ## 🚀 Quick Start
 
@@ -62,6 +63,10 @@ cd ../05_atomic_operations
 cd ../06_spinlocks
 ./01_naive_spinlock
 ./02_atomic_spinlock
+
+cd ../07_rwlock
+./01_mutex_vs_rwlock
+./02_config_cache
 ```
 
 ## 📖 How to Use This Guide
@@ -191,8 +196,9 @@ By completing this guide, you will:
 | 04 | Semaphores | 6 | 2.5 hours | Intermediate |
 | 05 | Atomic Operations | 6 | 2.5 hours | Intermediate-Advanced |
 | 06 | Spinlocks | 6 | 2 hours | Intermediate-Advanced |
+| 07 | Read-Write Locks | 6 | 2 hours | Intermediate-Advanced |
 
-**Total:** 37 files, ~15 hours of study material
+**Total:** 43 files, ~17 hours of study material
 
 ## 🤝 Contributing
 

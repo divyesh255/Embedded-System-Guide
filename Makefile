@@ -1,10 +1,10 @@
 # Master Makefile for Embedded Systems Learning Guide
 # Builds all concept modules
 
-.PHONY: all clean help threads mutex condvar semaphores atomic spinlocks rwlock
+.PHONY: all clean help threads mutex condvar semaphores atomic spinlocks rwlock eventfd
 
 # Default target - build all modules
-all: threads mutex condvar semaphores atomic spinlocks rwlock
+all: threads mutex condvar semaphores atomic spinlocks rwlock eventfd
 	@echo ""
 	@echo "✓ All modules built successfully!"
 	@echo ""
@@ -16,6 +16,7 @@ all: threads mutex condvar semaphores atomic spinlocks rwlock
 	@echo "  cd concepts/05_atomic_operations && ./01_atomic_counter"
 	@echo "  cd concepts/06_spinlocks && ./02_atomic_spinlock"
 	@echo "  cd concepts/07_rwlock && ./01_mutex_vs_rwlock"
+	@echo "  cd concepts/08_eventfd && ./01_basic_eventfd"
 
 # Build threads module
 threads:
@@ -52,6 +53,11 @@ rwlock:
 	@echo "Building rwlock module..."
 	@$(MAKE) -C concepts/07_rwlock
 
+# Build eventfd module
+eventfd:
+	@echo "Building eventfd module..."
+	@$(MAKE) -C concepts/08_eventfd
+
 # Clean all modules
 clean:
 	@echo "Cleaning all modules..."
@@ -62,6 +68,7 @@ clean:
 	@$(MAKE) -C concepts/05_atomic_operations clean
 	@$(MAKE) -C concepts/06_spinlocks clean
 	@$(MAKE) -C concepts/07_rwlock clean
+	@$(MAKE) -C concepts/08_eventfd clean
 	@echo "✓ All modules cleaned"
 
 # Show help
@@ -77,6 +84,7 @@ help:
 	@echo "  make atomic     - Build only atomic operations module"
 	@echo "  make spinlocks  - Build only spinlocks module"
 	@echo "  make rwlock     - Build only rwlock module"
+	@echo "  make eventfd    - Build only eventfd module"
 	@echo "  make clean      - Clean all build artifacts"
 	@echo "  make help       - Show this help"
 	@echo ""
@@ -88,6 +96,7 @@ help:
 	@echo "  ✓ 05_atomic_operations - Lock-Free Programming"
 	@echo "  ✓ 06_spinlocks - Busy-Wait Synchronization"
 	@echo "  ✓ 07_rwlock - Read-Write Locks"
+	@echo "  ✓ 08_eventfd - Event Notification"
 	@echo ""
 	@echo "To get started:"
 	@echo "  1. make"

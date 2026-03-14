@@ -25,7 +25,7 @@ Both tracks use a **problem-driven, hands-on approach** with runnable code examp
 **Study Time:** ~13 hours  
 **Difficulty:** Beginner to Advanced
 
-#### ✅ Completed Modules (5/8)
+#### ✅ Completed Modules (8/9)
 | Module | Topic | Files | Study Time | Status |
 |--------|-------|-------|------------|--------|
 | 01 | **Threads** | 7 | 2.5 hours | ✅ Complete |
@@ -33,11 +33,12 @@ Both tracks use a **problem-driven, hands-on approach** with runnable code examp
 | 03 | **Condition Variables** | 6 | 3 hours | ✅ Complete |
 | 04 | **Semaphores** | 6 | 2.5 hours | ✅ Complete |
 | 05 | **Atomic Operations** | 6 | 2.5 hours | ✅ Complete |
+| 06 | **Spinlocks** | 6 | 2 hours | ✅ Complete |
+| 07 | **Read-Write Locks** | 6 | 2 hours | ✅ Complete |
+| 08 | **eventfd** | 6 | 1.5 hours | ✅ Complete |
 
 #### 🚧 Coming Soon
-- 06: Spinlocks
-- 07: Event Notification
-- 08: Signal Handling
+- 09: Signal Handling
 
 **[→ Start Concurrent Programming Track](concepts/README.md)**
 
@@ -214,9 +215,9 @@ cat 00_README.md
 - **Study Material:** ~25 hours available
 
 ### Concurrent Programming
-- **Modules:** 5/8 complete (62.5%)
-- **Files:** 31
-- **Study Time:** 13 hours
+- **Modules:** 8/9 complete (89%)
+- **Files:** 49
+- **Study Time:** 18.5 hours
 
 ### System Design
 - **Patterns:** 10/10 complete (100%) ✅ COMPLETE!

@@ -1,220 +1,252 @@
-# Embedded Systems Learning Guide
+   # Embedded Systems Learning Guide
 
-A comprehensive, hands-on guide to mastering embedded systems programming concepts through practical examples and exercises.
+   A comprehensive, hands-on guide to mastering embedded systems programming concepts through practical examples and exercises.
 
-## 🎯 Purpose
+   ## 🎯 Purpose
 
-This guide provides a structured learning path for embedded systems programming, covering essential concepts with:
-- Clear theoretical explanations
-- Runnable code examples
-- Progressive complexity
-- Practice exercises with solutions
+   This guide provides a structured learning path for embedded systems programming, covering essential concepts with:
+   - Clear theoretical explanations
+   - Runnable code examples
+   - Progressive complexity
+   - Practice exercises with solutions
 
-## 📚 Current Modules
+   ## 📚 Current Modules
 
-### ✅ Completed
-- **01_threads** - POSIX Threads (pthreads)
-- **02_mutex** - Mutual Exclusion
-- **03_condition_variables** - Efficient Thread Synchronization
-- **04_semaphores** - Resource Management
-- **05_atomic_operations** - Lock-Free Programming
-- **06_spinlocks** - Busy-Wait Synchronization
-- **07_rwlock** - Read-Write Locks
-- **08_eventfd** - Event Notification
+   ### ✅ Completed
+   - **01_threads** - POSIX Threads (pthreads)
+   - **02_mutex** - Mutual Exclusion
+   - **03_condition_variables** - Efficient Thread Synchronization
+   - **04_semaphores** - Resource Management
+   - **05_atomic_operations** - Lock-Free Programming
+   - **06_spinlocks** - Busy-Wait Synchronization
+   - **07_rwlock** - Read-Write Locks
+   - **08_eventfd** - Event Notification
+   - **09_signals** - Signal Handling
 
-### 🚧 Coming Soon
-- 09_signal_handling - Signal Management
+   ### 🎉 Track Complete!
+   All 9 modules finished! You've mastered concurrent programming!
 
-## 🚀 Quick Start
+   ## 🚀 Quick Start
 
-```bash
-# Clone or download this repository
-cd Embedded-System-Guide
+   ```bash
+   # Clone or download this repository
+   cd Embedded-System-Guide
 
-# Build all examples
-make
+   # Build all examples
+   make
 
-# Or build specific module
-make threads
-make mutex
-make condvar
+   # Or build specific module
+   make threads
+   make mutex
+   make condvar
 
-# Run examples
-cd concepts/01_threads
-./01_basic_thread
-./02_thread_args
+   # Run examples
+   cd concepts/01_threads
+   ./01_basic_thread
+   ./02_thread_args
 
-cd ../02_mutex
-./01_race_condition
-./02_mutex_solution
+   cd ../02_mutex
+   ./01_race_condition
+   ./02_mutex_solution
 
-cd ../03_condition_variables
-./02_condvar_good
-./03_producer_consumer
+   cd ../03_condition_variables
+   ./02_condvar_good
+   ./03_producer_consumer
 
-cd ../04_semaphores
-./01_binary_semaphore
-./02_counting_semaphore
+   cd ../04_semaphores
+   ./01_binary_semaphore
+   ./02_counting_semaphore
 
-cd ../05_atomic_operations
-./01_atomic_counter
-./02_compare_and_swap
+   cd ../05_atomic_operations
+   ./01_atomic_counter
+   ./02_compare_and_swap
 
-cd ../06_spinlocks
-./01_naive_spinlock
-./02_atomic_spinlock
+   cd ../06_spinlocks
+   ./01_naive_spinlock
+   ./02_atomic_spinlock
 
-cd ../07_rwlock
-./01_mutex_vs_rwlock
-./02_config_cache
+   cd ../07_rwlock
+   ./01_mutex_vs_rwlock
+   ./02_config_cache
 
-cd ../08_eventfd
-./01_basic_eventfd
-./02_thread_notification
-```
+   cd ../08_eventfd
+   ./01_basic_eventfd
+   ./02_thread_notification
 
-## 📖 How to Use This Guide
+   cd ../09_signals
+   ./01_basic_signal
+   ./02_sigaction
+   ```
 
-### For Each Module:
+   ## 📖 How to Use This Guide
 
-1. **Read Theory** (30-45 min)
-   - Start with `00_README.md` in each concept directory
-   - Understand the "what", "why", and "when"
+   ### For Each Module:
 
-2. **Study Examples** (1-2 hours)
-   - Run each example program
-   - Read the code and comments carefully
-   - Experiment with modifications
+   1. **Read Theory** (30-45 min)
+      - Start with `00_README.md` in each concept directory
+      - Understand the "what", "why", and "when"
 
-3. **Practice** (45-60 min)
-   - Complete exercises in `05_exercises.md`
-   - Try to solve before looking at solutions
-   - Understand why each solution works
+   2. **Study Examples** (1-2 hours)
+      - Run each example program
+      - Read the code and comments carefully
+      - Experiment with modifications
 
-4. **Review** (15-30 min)
-   - Revisit theory with new understanding
-   - Note key takeaways
-   - Move to next module
+   3. **Practice** (45-60 min)
+      - Complete exercises in `05_exercises.md`
+      - Try to solve before looking at solutions
+      - Understand why each solution works
 
-## 🛠️ Prerequisites
+   4. **Review** (15-30 min)
+      - Revisit theory with new understanding
+      - Note key takeaways
+      - Move to next module
 
-### Required Knowledge
-- C programming basics
-- Linux/Unix command line
-- Basic understanding of processes
+   ## 🛠️ Prerequisites
 
-### System Requirements
-- Linux or WSL2
-- GCC compiler
-- Make build tool
-- POSIX threads library (pthread)
+   ### Required Knowledge
+   - C programming basics
+   - Linux/Unix command line
+   - Basic understanding of processes
 
-### Installation (Ubuntu/Debian)
-```bash
-sudo apt update
-sudo apt install build-essential
-```
+   ### System Requirements
+   - Linux or WSL2
+   - GCC compiler
+   - Make build tool
+   - POSIX threads library (pthread)
 
-## 📂 Repository Structure
+   ### Installation (Ubuntu/Debian)
+   ```bash
+   sudo apt update
+   sudo apt install build-essential
+   ```
 
-```
-Embedded-System-Guide/
-├── README.md              # This file
-├── Makefile               # Master build file
-└── concepts/
-    ├── 01_threads/
-    │   ├── 00_README.md           # Theory
-    │   ├── 01_basic_thread.c      # Example 1
-    │   ├── 02_thread_args.c       # Example 2
-    │   ├── 03_multiple_threads.c  # Example 3
-    │   ├── 04_thread_join.c       # Example 4
-    │   ├── 05_exercises.md        # Practice
-    │   └── Makefile               # Build examples
-    ├── 02_mutex/
-    │   ├── 00_README.md           # Theory
-    │   ├── 01_race_condition.c    # Problem demo
-    │   ├── 02_mutex_solution.c    # Solution
-    │   ├── 03_deadlock.c          # Deadlock demo
-    │   ├── 04_trylock.c           # Non-blocking
-    │   ├── 05_exercises.md        # Practice
-    │   └── Makefile               # Build examples
-    ├── 03_condition_variables/
-    │   ├── 00_README.md           # Theory
-    │   ├── 01_busy_wait_bad.c     # Problem demo
-    │   ├── 02_condvar_good.c      # Solution
-    │   ├── 03_producer_consumer.c # Classic pattern
-    │   ├── 04_spurious_wakeup.c   # Edge cases
-    │   ├── 05_exercises.md        # Practice
-    │   └── Makefile               # Build examples
-    ├── 04_semaphores/
-    │   ├── 00_README.md           # Theory
-    │   ├── 01_binary_semaphore.c  # Binary semaphore
-    │   ├── 02_counting_semaphore.c # Resource pool
-    │   ├── 03_producer_consumer.c # Classic pattern
-    │   ├── 04_rate_limiter.c      # Rate limiting
-    │   ├── 05_exercises.md        # Practice
-    │   └── Makefile               # Build examples
-    ├── 05_atomic_operations/
-    │   ├── 00_README.md           # Theory
-    │   ├── 01_atomic_counter.c    # Lock-free counter
-    │   ├── 02_compare_and_swap.c  # CAS operation
-    │   ├── 03_spinlock.c          # Spinlock
-    │   ├── 04_reference_counting.c # Refcounting
-    │   ├── 05_exercises.md        # Practice
-    │   └── Makefile               # Build examples
-    └── 06_spinlocks/
-        ├── 00_README.md           # Theory
-        ├── 01_naive_spinlock.c    # Race condition demo
-        ├── 02_atomic_spinlock.c   # Correct implementation
-        ├── 03_test_and_test_and_set.c # Optimized version
-        ├── 04_ticket_spinlock.c   # Fair spinlock
-        ├── 05_exercises.md        # Practice
-        └── Makefile               # Build examples
-```
+   ## 📂 Repository Structure
 
-## 🎓 Learning Objectives
+   ```
+   Embedded-System-Guide/
+   ├── README.md              # This file
+   ├── Makefile               # Master build file
+   └── concepts/
+      ├── 01_threads/
+      │   ├── 00_README.md           # Theory
+      │   ├── 01_basic_thread.c      # Example 1
+      │   ├── 02_thread_args.c       # Example 2
+      │   ├── 03_multiple_threads.c  # Example 3
+      │   ├── 04_thread_join.c       # Example 4
+      │   ├── 05_exercises.md        # Practice
+      │   └── Makefile               # Build examples
+      ├── 02_mutex/
+      │   ├── 00_README.md           # Theory
+      │   ├── 01_race_condition.c    # Problem demo
+      │   ├── 02_mutex_solution.c    # Solution
+      │   ├── 03_deadlock.c          # Deadlock demo
+      │   ├── 04_trylock.c           # Non-blocking
+      │   ├── 05_exercises.md        # Practice
+      │   └── Makefile               # Build examples
+      ├── 03_condition_variables/
+      │   ├── 00_README.md           # Theory
+      │   ├── 01_busy_wait_bad.c     # Problem demo
+      │   ├── 02_condvar_good.c      # Solution
+      │   ├── 03_producer_consumer.c # Classic pattern
+      │   ├── 04_spurious_wakeup.c   # Edge cases
+      │   ├── 05_exercises.md        # Practice
+      │   └── Makefile               # Build examples
+      ├── 04_semaphores/
+      │   ├── 00_README.md           # Theory
+      │   ├── 01_binary_semaphore.c  # Binary semaphore
+      │   ├── 02_counting_semaphore.c # Resource pool
+      │   ├── 03_producer_consumer.c # Classic pattern
+      │   ├── 04_rate_limiter.c      # Rate limiting
+      │   ├── 05_exercises.md        # Practice
+      │   └── Makefile               # Build examples
+      ├── 05_atomic_operations/
+      │   ├── 00_README.md           # Theory
+      │   ├── 01_atomic_counter.c    # Lock-free counter
+      │   ├── 02_compare_and_swap.c  # CAS operation
+      │   ├── 03_spinlock.c          # Spinlock
+      │   ├── 04_reference_counting.c # Refcounting
+      │   ├── 05_exercises.md        # Practice
+      │   └── Makefile               # Build examples
+      ├── 06_spinlocks/
+      │   ├── 00_README.md           # Theory
+      │   ├── 01_naive_spinlock.c    # Race condition demo
+      │   ├── 02_atomic_spinlock.c   # Correct implementation
+      │   ├── 03_test_and_test_and_set.c # Optimized version
+      │   ├── 04_ticket_spinlock.c   # Fair spinlock
+      │   ├── 05_exercises.md        # Practice
+      │   └── Makefile               # Build examples
+      ├── 07_rwlock/
+      │   ├── 00_README.md           # Theory
+      │   ├── 01_mutex_vs_rwlock.c   # Performance comparison
+      │   ├── 02_config_cache.c      # Config cache pattern
+      │   ├── 03_writer_starvation.c # Starvation demo
+      │   ├── 04_lookup_table.c      # Lookup table
+      │   ├── 05_exercises.md        # Practice
+      │   └── Makefile               # Build examples
+      ├── 08_eventfd/
+      │   ├── 00_README.md           # Theory
+      │   ├── 01_basic_eventfd.c     # Basic usage
+      │   ├── 02_thread_notification.c # Thread notification
+      │   ├── 03_nonblocking.c       # Non-blocking mode
+      │   ├── 04_semaphore_mode.c    # Semaphore mode
+      │   ├── 05_exercises.md        # Practice
+      │   └── Makefile               # Build examples
+      └── 09_signals/
+         ├── 00_README.md           # Theory
+         ├── 01_basic_signal.c      # Basic signal handling
+         ├── 02_sigaction.c         # Advanced sigaction
+         ├── 03_signal_eventfd.c    # Thread-safe with eventfd
+         ├── 04_timer_signal.c      # SIGALRM timer
+         ├── 05_exercises.md        # Practice
+         └── Makefile               # Build examples
+   ```
 
-By completing this guide, you will:
-- ✅ Understand multi-threaded programming
-- ✅ Master synchronization primitives
-- ✅ Write thread-safe code
-- ✅ Debug concurrent programs
-- ✅ Apply best practices
-- ✅ Build real-world embedded systems
+   ## 🎓 Learning Objectives
 
-## 💡 Tips for Success
+   By completing this guide, you will:
+   - ✅ Understand multi-threaded programming
+   - ✅ Master synchronization primitives
+   - ✅ Write thread-safe code
+   - ✅ Debug concurrent programs
+   - ✅ Apply best practices
+   - ✅ Build real-world embedded systems
 
-1. **Don't Rush** - Take time to understand each concept
-2. **Experiment** - Modify examples, break things, learn
-3. **Practice** - Do all exercises, even if they seem easy
-4. **Review** - Revisit concepts as you progress
-5. **Build** - Create your own projects using these concepts
+   ## 💡 Tips for Success
 
-## 📊 Module Overview
+   1. **Don't Rush** - Take time to understand each concept
+   2. **Experiment** - Modify examples, break things, learn
+   3. **Practice** - Do all exercises, even if they seem easy
+   4. **Review** - Revisit concepts as you progress
+   5. **Build** - Create your own projects using these concepts
 
-| Module | Topic | Files | Study Time | Difficulty |
-|--------|-------|-------|------------|------------|
-| 01 | Threads | 7 | 2.5 hours | Beginner |
-| 02 | Mutex | 6 | 2.5 hours | Beginner-Intermediate |
-| 03 | Condition Variables | 6 | 3 hours | Intermediate |
-| 04 | Semaphores | 6 | 2.5 hours | Intermediate |
-| 05 | Atomic Operations | 6 | 2.5 hours | Intermediate-Advanced |
-| 06 | Spinlocks | 6 | 2 hours | Intermediate-Advanced |
-| 07 | Read-Write Locks | 6 | 2 hours | Intermediate-Advanced |
-| 08 | eventfd | 6 | 1.5 hours | Intermediate |
+   ## 📊 Module Overview
 
-**Total:** 49 files, ~18.5 hours of study material
+   | Module | Topic | Files | Study Time | Difficulty |
+   |--------|-------|-------|------------|------------|
+   | 01 | Threads | 7 | 2.5 hours | Beginner |
+   | 02 | Mutex | 6 | 2.5 hours | Beginner-Intermediate |
+   | 03 | Condition Variables | 6 | 3 hours | Intermediate |
+   | 04 | Semaphores | 6 | 2.5 hours | Intermediate |
+   | 05 | Atomic Operations | 6 | 2.5 hours | Intermediate-Advanced |
+   | 06 | Spinlocks | 6 | 2 hours | Intermediate-Advanced |
+   | 07 | Read-Write Locks | 6 | 2 hours | Intermediate-Advanced |
+   | 08 | eventfd | 6 | 1.5 hours | Intermediate |
+   | 09 | Signal Handling | 6 | 2 hours | Intermediate-Advanced |
 
-## 🤝 Contributing
+   **Total:** 55 files, ~20.5 hours of study material
 
-This is a living guide. Suggestions for improvements are welcome!
+   🎉 **CONCURRENT PROGRAMMING TRACK COMPLETE!** 🎉
 
-## 📝 License
+   ## 🤝 Contributing
 
-Educational use - Free to learn, share, and build upon.
+   This is a living guide. Suggestions for improvements are welcome!
 
-## 🚀 Let's Begin!
+   ## 📝 License
 
-Start with: `concepts/01_threads/00_README.md`
+   Educational use - Free to learn, share, and build upon.
 
-Happy Learning! 🎉
+   ## 🚀 Let's Begin!
+
+   Start with: `concepts/01_threads/00_README.md`
+
+   Happy Learning! 🎉
